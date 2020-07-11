@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+#body {
+  margin: 15px;
+  background-color: #fffab3;
+  color: #454B4C;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+}
+
+#rollInput {
+  margin-left: 10px;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  height: 100%;
+  border-width: 1px;
+  padding: 5px;
+}
+
+#streakInput{
+  
+  margin-left: 10px;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  height: 100%;
+  border-width: 1px;
+  padding: 5px;
+}
+
+#rollOutput {
+  font-family: 'Roboto', sans-serif;
+  margin: 40px;
+}
+
+#streakOutput {
+  font-family: 'Roboto', sans-serif;
+  margin: 40px;
+}

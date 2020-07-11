@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <!-- import Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body id="body">
+    <h1>DICE ROLL SIMULATOR</h1>
+    <p>
+      Use this simulator to determine how many rolls it would take to get a certain number of rolls for one side of a six sided dice. 
+    </p>
+    <ol>
+      <li>Pick the side of the dice you want to run the progrram for.</li>
+      <div class="form-group">
+        <select class="form-control" id="sel1">
+          <option value="" selected disabled>Pick a dice side</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+        </select>
+      </div>
+      <li>Type in how many rolls you want to count for. For example if you tpye in 32, the simulator will tell you how many rolls it will take to get 32 fives (or whatever number you picked) when rolling the dice.</li>
+    </ol>
+    <div class="row">
+      <div class="col-9">
+        <input id="rollInput" class="input" placeholder="How many rolls?" />
+      </div>
+      <div class="col-3">
+        <button id="submit" type="button" class="btn btn-primary">
+          Run Simulator
+        </button>
+      </div>
+    </div>
+    <div id="rollOutput">
+      <!--   Print the results of the simulator here     -->
+      
+    </div>
+    <p>
+      The second simulator checks how long it takes to get a certain number of
+      dice rolls in a row. If you type 10, the simulator will tell you how long
+      it took to get 10 rolls of a five in a row (or some other number).
+    </p>
+    <div class="row">
+      <div class="col-9">
+        <input
+          id="streakInput"
+          class="input-sm"
+          placeholder="Dice roll streak?"
+        />
+      </div>
+      <div class="col-3">
+        <button id="streakSubmit" type="button" class="btn btn-primary">
+          Run Simulator
+        </button>
+      </div>
+    </div>
+    <!--   If you want the user to select the number to count for, place the input below here   -->
+
+    <div id="streakOutput">
+      <!--   Print the results of the simulator here     -->
+    </div>
+  </body>
+</html>
